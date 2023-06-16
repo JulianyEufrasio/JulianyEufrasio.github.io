@@ -33,16 +33,13 @@ body{
     color: var(--text-color);
     overflow-x: hidden;
 }
-
 section{
     padding: 60px 12%;
     width: 100%;
 }
-
 a{
     text-decoration: none;
 }
-
 ul{
     list-style: none; 
 }
@@ -50,16 +47,15 @@ ul{
 .titles{
     text-align: left;
 }
-
 .titles h2{
     font-size: 32px;
 }
-
 .titles span{
     color: var(--main-color);
     font-size: var(--sm-font);
     font-weight: 600;
 }
+
 /* navbar */
 nav{
     position: fixed;
@@ -76,24 +72,20 @@ nav{
     padding: 20px 12%;
     transition: 0.2s;
 }
-
 nav .logo{
     color: var(--text-color);
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 1.5rem;
 }
-
 nav .logo span{
     font-size: .85rem;
     color: var(--main-color);
     font-weight: 400;
 }
-
 nav .navbar{
     display: flex;
 }
-
 nav .navbar a{
     color: var(--text-color);
     font-size: 1rem;
@@ -101,21 +93,14 @@ nav .navbar a{
     font-weight: 500;
     transition: .5s;
 }
-
-.port_none{
-    display: none;
-}
-
 nav .navbar a:hover{
     color: var(--hover);
 }
-
 .btn{
     background-color: var(--main-color);
     color: #fff !important;
     border-radius: 25px;
 }
-
 #bx-menu{
     display: none;
     font-size: 24px;
@@ -134,26 +119,21 @@ nav .navbar a:hover{
     align-items: center;
     gap: 1.5rem;
 }
-
 .home .home_img{
     order: 3;
 }
-
 .home .home_img img{
     width: 100%;
 }
-
 .home .social_links{
     display: flex;
     flex-direction: column;
 }
-
 .home .social_links a{
     font-size: 22px;
     color: var(--text-color);
     margin-bottom: 1.2rem;
 }
-
 .home .social_links a:hover{
     color: var(--hover);
 }
@@ -161,31 +141,26 @@ nav .navbar a:hover{
     font-weight: 500;
     font-size: var(--md-font);
 }
-
 .home .home_text h1{
     font-size: var(--xl-font);
 }
-
 .home .home_text h2{
     font-weight: 400;
     font-size: 1.2rem;
 }
-
 .home .home_text p{
     font-size: var(--sm-font);
     font-weight: 300;
     margin: .5rem 0;
     text-align: left;
 }
-
 .home .btn{
     display: inline-block;
     padding: 15px 20px;
     margin-top: .5rem;
     border-radius: 10px;
-    transition: .6s;
+    transition: .3s;
 }
-
 .home .btn:hover{
     background-color: transparent;
     border: var(--main-color) 1px solid;
@@ -197,7 +172,6 @@ nav .navbar a:hover{
     background-color: var(--third-color);
     min-width: 100%;
 }
-
 .summary{
     display: flex;
     align-items: center;
@@ -205,54 +179,35 @@ nav .navbar a:hover{
     position: relative;
     bottom: 35px;
 }
-
 .summary .index{
     font-size: 35px;
     position: relative;
     bottom: 30px;
 }
-
-/* .about .summary .line::after{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 20%;
-    height: 2.5px;
-    background-color: var(--text-color);
-    bottom: 50px;
-    left: 45%;
-} */
-
 .about .about_content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-top: 2.5rem;
 }
-
 .about .about_content .about_img img{
     width: 90%;
 }
-
 .about .about_content .about_text p{
     text-align: justify;
     margin-bottom: 2rem;
 }
-
 .about .about_content .about_text .contact_info{
     margin: 1rem 0;
 }
-
 .about_text .contact_info .info{
     padding: .5rem;
     display: flex;
     align-items: center;
 }
-
 .about_text .contact_info .info a{
     color: var(--text-color);
 }
-
 .about_text .contact_info .info a:hover{
     color: var(--hover);
 }
@@ -268,27 +223,20 @@ nav .navbar a:hover{
     gap: 1.5rem;
     margin-top: 2.5rem;
 }
-
 .skills .skills_content .skills_img img{
     width: 90%;
 } 
-
 .skills .skills_content .skills_img {
     order: 3;
 } 
-
 .skills .skills_content .info_skills{
     width: 60%;
-    /* border: var(--third-color) 1px solid; */
     padding: 1.5rem;
-    /* border-radius: 15px; */
 }
-
 .skills .skills_content .info_skills .skill_title{
     font-weight: 500;
     font-size: 22px;
 }
-
 .skills .skills_content .info_skills .skill_title::after{
     background-color: var(--text-color);
     content: '';
@@ -297,7 +245,6 @@ nav .navbar a:hover{
     width: 150px;
     height: 2px;
 }
-
 .skills .skills_content .info_skills ul{
     margin-top: 20px;
 }
@@ -305,43 +252,57 @@ nav .navbar a:hover{
     padding-bottom: 5%;
     line-height: 1.2rem;
 }
-
 .skills .skills_content .info_skills ul li i{
     padding-right: 2%;
     font-size: 20px;
 }
-
 .skills .skills_content .info_skills ul li span{
     color: var(--main-color);
     font-size: .85rem;
 }
 
 /* portifolio */
-/* .portifolio{
-
-} */
-
 .portifolio .portifolio_content{
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2.5rem;
 }
-
-
-.portifolio .portifolio_content .alert span{
-    font-weight: 500;
-    background-color: var(--third-color);
-    padding: 20px;
+.portifolio .portifolio_content .project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .6rem;
+    width: 100%;
+    max-width: 350px;
 }
-
-.portifolio .portifolio_content .alert span a{
-    color: var(--text-color);
-    font-size: 12px;
-    padding-left: 20px;
-    text-decoration: underline !important;
+.portifolio .portifolio_content h4{
+    font-size: var(--sm-font);
+    font-weight: 600;
 }
-
+.portifolio .portifolio_content p{
+    font-size: .85rem;
+    text-align: justify;
+}
+.portifolio .portifolio_content a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--main-color);
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    padding: 10px 28px;
+    transition: .3s;
+}
+.portifolio .portifolio_content a:hover{
+    background-color: transparent;
+    border: var(--main-color) 1px solid;
+    color: var(--main-color) !important;
+}
 /* footer */
 .footer{
     background-color: var(--text-color);
@@ -352,26 +313,14 @@ nav .navbar a:hover{
     min-height: 20vh;
 
 }
-
 .footer .footer_info{
     display: flex;
     flex-direction: column;
 }
-
 .footer .footer_info h2{
     font-weight: 300;
     font-size: 18px;
 }
-
 .footer .footer_info span{
     font-weight: 200;
 }
-
-/* .footer .footer_info a{
-    font-weight: 300;
-    font-size: 15px;
-    color: #fff;
-    position: absolute;
-    left: 85%;
-    bottom: 50px;
-} */
